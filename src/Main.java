@@ -81,7 +81,7 @@ public class Main {
                     output = rimNumbersFrom10to100[result / 10 - 1];
                     if (result % 10 != 0) output += rimNumbersFrom1to10[result % 10 - 1];
                 } else {
-                    output = String.valueOf(rimNumbersFrom1to10[result - 1]);
+                    output = rimNumbersFrom1to10[result - 1];
                 }
             }
         }
