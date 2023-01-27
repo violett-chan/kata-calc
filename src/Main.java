@@ -53,7 +53,7 @@ public class Main {
                 throw new IOException();
             }
             //это нормальные числа
-            if (a < 1 || a > 10 || b < 0 || b > 10) {
+            if (a < 1 || a > 10 || b < 1 || b > 10) {
                 //в тз написано только от 1 до 10 включительно!
                 System.out.println("калькулятор умеет работать только с числами от 1 до 10 включительно");
                 throw new IOException();
@@ -66,7 +66,7 @@ public class Main {
             case 2 -> result = a * b;
             case 3 -> result = a / b;
             default -> {
-                //неверный операнд
+                //неверный оператор
                 System.out.println("формат математической операции не удовлетворяет заданию - два операнда и один оператор (+, -, /, *)");
                 throw new IOException();
             }
