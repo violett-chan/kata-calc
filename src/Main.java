@@ -78,12 +78,8 @@ public class Main {
                 throw new IOException();
             } else {
                 if (result > 10) {
-                    if (result == 100) {
-                        output = "C"; //по сути output = rimNumbersFrom10to100[result / 10 - 1] но так быстрее
-                    } else {
-                        output = rimNumbersFrom10to100[result / 10 - 1];
-                        if (result % 10 != 0) output += rimNumbersFrom1to10[result % 10 - 1];
-                    }
+                    output = rimNumbersFrom10to100[result / 10 - 1];
+                    if (result % 10 != 0) output += rimNumbersFrom1to10[result % 10 - 1];
                 } else {
                     output = String.valueOf(rimNumbersFrom1to10[result - 1]);
                 }
